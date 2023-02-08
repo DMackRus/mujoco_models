@@ -8,8 +8,8 @@
 ====================================================== -->
 
     <asset>
-        <mesh name="finger_col" file="meshes/collision/finger.stl" scale='1.75 1.0 1.75'/>
-        <mesh name="finger_viz" file="meshes/visual/finger_1.obj" scale='1.75 1.0 1.75'/>
+        <mesh name="finger_col" file="meshes/visual/finger.obj" scale='1 1 1'/>
+        <mesh name="finger_viz" file="meshes/visual/finger.obj" scale='1 1 1'/>
     </asset>
 
     <default>
@@ -25,24 +25,24 @@
         <default class="visual">
             <geom type="mesh" contype="0" conaffinity="0" group="2"/>
         </default>
-        <default class="collision">
-            <geom type="mesh" group="3"/>
-            <default class="fingertip_pad_collision_1">
-                <geom type="box" size="0.0085 0.004 0.0085" pos="0 0.0055 0.0445"/>
-            </default>
-            <default class="fingertip_pad_collision_2">
-                <geom type="box" size="0.003 0.002 0.003" pos="0.0055 0.002 0.05"/>
-            </default>
-            <default class="fingertip_pad_collision_3">
-                <geom type="box" size="0.003 0.002 0.003" pos="-0.0055 0.002 0.05"/>
-            </default>
-            <default class="fingertip_pad_collision_4">
-                <geom type="box" size="0.003 0.002 0.0035" pos="0.0055 0.002 0.0395"/>
-            </default>
-            <default class="fingertip_pad_collision_5">
-                <geom type="box" size="0.003 0.002 0.0035" pos="-0.0055 0.002 0.0395"/>
-            </default>
-        </default>
+<!--        <default class="collision">-->
+<!--            <geom type="mesh" group="3"/>-->
+<!--            <default class="fingertip_pad_collision_1">-->
+<!--                <geom type="box" size="0.0085 0.004 0.0085" pos="0 0.0055 0.0445"/>-->
+<!--            </default>-->
+<!--            <default class="fingertip_pad_collision_2">-->
+<!--                <geom type="box" size="0.003 0.002 0.003" pos="0.0055 0.002 0.05"/>-->
+<!--            </default>-->
+<!--            <default class="fingertip_pad_collision_3">-->
+<!--                <geom type="box" size="0.003 0.002 0.003" pos="-0.0055 0.002 0.05"/>-->
+<!--            </default>-->
+<!--            <default class="fingertip_pad_collision_4">-->
+<!--                <geom type="box" size="0.003 0.002 0.0035" pos="0.0055 0.002 0.0395"/>-->
+<!--            </default>-->
+<!--            <default class="fingertip_pad_collision_5">-->
+<!--                <geom type="box" size="0.003 0.002 0.0035" pos="-0.0055 0.002 0.0395"/>-->
+<!--            </default>-->
+<!--        </default>-->
     </default>
 
     <asset>
@@ -51,8 +51,10 @@
         <material class="panda" name="black" rgba="0.25 0.25 0.25 1"/>
 
 
-        <mesh file="meshes/collision/finger_0.obj"/>
-        <mesh file="meshes/collision/finger_1.obj"/>
+<!--        <mesh file="meshes/collision/finger_0.obj"/>-->
+<!--        <mesh file="meshes/collision/finger_1.obj"/>-->
+        <mesh file="meshes/visual/finger.obj"/>
+        <mesh file="meshes/visual/finger.obj"/>
 
     </asset>
 
