@@ -51,18 +51,6 @@
                                         <geom pos="0 0 0.107" quat="0.92388 0 0 -0.382683" class="panda_col" mesh="hand_col" mass="0.81909"/>
                                         <site name='end_effector' pos='0 0 .210' size='0.01' euler='0 0 -0.785398'/>
 
-<!--                                        <body name="left_finger" pos="0 0 0.0584">-->
-<!--                                            <inertial mass="0.015" pos="0 0 0" diaginertia="2.375e-6 2.375e-6 7.5e-7"/>-->
-<!--                                            <joint name="panda0_finger_joint1" class="finger"/>-->
-<!--                                            <geom mesh="finger_0" material="off_white" class="visual"/>-->
-<!--                                            <geom mesh="finger_1" material="black" class="visual"/>-->
-<!--                                            <geom mesh="finger_0" class="collision"/>-->
-<!--                                            <geom class="fingertip_pad_collision_1"/>-->
-<!--                                            <geom class="fingertip_pad_collision_2"/>-->
-<!--                                            <geom class="fingertip_pad_collision_3"/>-->
-<!--                                            <geom class="fingertip_pad_collision_4"/>-->
-<!--                                            <geom class="fingertip_pad_collision_5"/>-->
-<!--                                        </body>-->
 
 <!--                                        <body name="panda_rightfinger" pos="0 0 0.0584" euler="0 0 3.1415">-->
 <!--                                            <inertial pos="0 0 0" mass="1.5e-02" diaginertia="2.3749e-06 2.3749e-06 7.5e-07"/>-->
@@ -72,9 +60,9 @@
 
                                         <body name="panda0_leftfinger" pos="0 0 0.1654" quat="0.92388 0 0 -0.382683">
                                             <inertial pos="-1.57863e-05 0.0118731 0.0434103" quat="0.705868 0.0310348 -0.0314925 0.706962" mass="0.0927059" diaginertia="6.57134e-05 6.09611e-05 1.09932e-05" />
-                                            <joint name="panda0_finger_joint1"  axis="0 1 0" type="slide" range="0 0.04"/>
-                                            <!--  class="panda_finger" -->
-                                            <geom type="mesh" mesh="finger_viz"/>
+                                            <joint name="panda0_finger_joint1"  axis="0 1 0" type="slide" range="0 0.04" class="panda_finger"/>
+                                            <geom class="panda_viz" type="mesh" mesh="finger_viz"/>
+                                            <geom class="panda_col" type="mesh" mesh="finger_viz"/>
                                             <!-- class="panda_viz" -->
                                             <!-- <geom class="panda_col" mesh="finger_col"/> -->
 <!--                                            <geom size="0.0070" fromto=".009 .006 .0875   -.009 .009 .0875" type="capsule" />-->
@@ -102,6 +90,7 @@
                                             <inertial pos="1.57863e-05 -0.0118731 0.0434103" quat="0.705868 -0.0310348 0.0314925 0.706962" mass="0.0927059" diaginertia="6.57134e-05 6.09611e-05 1.09932e-05" />
                                             <joint name="panda0_finger_joint2" axis="0 -1 0" type="slide" range="0 0.04" class="panda_finger"/>
                                             <geom class="panda_viz" mesh="finger_viz"/>
+                                            <geom class="panda_col" type="mesh" mesh="finger_viz"/>
                                         </body>
                                     </body>
 
