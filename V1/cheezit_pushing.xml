@@ -14,15 +14,23 @@
     <worldbody>
         <!-- Include the franka_panda robot arm model -->
         <include file="assets/chain0.xml"/>
-        <body pos="0.7 0.02 0.041" name="goal">
+        <body pos="0.7 0.02 0.1055" name="goal">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size="0.03 0.0785 0.1055" mass="0.422" rgba = "0 1 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <!-- size="0.0785 0.03 0.1055" -->
+            <!-- solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" -->
+            <geom type = "box" pos = "0 0 0" size="0.0785 0.05 0.1055" mass="0.422" rgba = "0 1 0 1" solimp="0.4 0.9 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
         </body>
 
-        <body pos="5 0 0" name="display_goal">
+        <body pos="1 0 0" name="display_goal">
             <joint type="free" />
             <geom type = "box" pos = "1 0 0.01" size = ".01 .01 .01" mass="1" margin = "0.001"/>
-            <site type="box" pos="0 0 0" size="0.0785 0.03 0.1055" rgba="0 1 0 1"/>
+            <site type="box" pos="0 0 -0.1054" size="0.0785 0.05 0.1055" rgba="0 1 0 1"/>
+        </body>
+
+        <body pos="1 0 0" name="display_intermediate">
+            <joint type="free" />
+            <geom type = "box" pos = "1 0 0.01" size = ".01 .01 .01" mass="1" margin = "0.001"/>
+            <site type="box" pos="0 0 0" size=".02 .02 .02" rgba="0 0 1 1"/>
         </body>
 
     </worldbody>
