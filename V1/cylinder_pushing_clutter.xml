@@ -21,12 +21,17 @@
 
         <body pos="1 0.02 0.041" name="obstacle1">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.04" mass="1" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.06" mass="1" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
         </body>
 
         <body pos="1.5 0.02 0.041" name="obstacle2">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.08 0.08 0.08" mass="0.8" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "box" pos = "0 0 0" size = "0.06 0.06 0.06" mass="0.8" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+        </body>
+
+        <body pos="1.5 0.02 0.041" name="obstacle3">
+            <joint type="free" />
+            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.06" mass="0.9" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
         </body>
 
         <body pos="1 0 0" name="display_goal">
