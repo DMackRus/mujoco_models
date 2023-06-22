@@ -21,7 +21,7 @@
 
         <body pos="1 0.02 0.066" name="mainObstacle">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.03 0.03 0.06" mass="1.5" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "box" pos = "0 0 0" size = "0.03 0.03 0.06" mass="4" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
         </body>
 
         <body pos="1 0.02 0.066" name="obstacle1">
@@ -31,17 +31,17 @@
 
         <body pos="1 0.02 0.066" name="obstacle2">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.05" mass="1.5" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.05" mass="2" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
         </body>
 
         <body pos="1 0.02 0.066" name="obstacle3">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0" size = "0.05 0.08" mass="0.8" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.05 0.08" mass="3" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
         </body>
 
         <body pos="1 0.02 0.066" name="obstacle4">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.09" mass="1.5" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.09" mass="5" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
         </body>
 
         <body pos="1 0.02 0.066" name="obstacle5">
