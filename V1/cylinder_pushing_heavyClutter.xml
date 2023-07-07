@@ -16,57 +16,57 @@
         <include file="assets/chain0.xml"/>
         <body pos="0.7 0.02 0.041" name="blueTin">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0" size = "0.045 0.065" mass="0.3" rgba = "0 1 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.06 0.085" mass="0.74" rgba = "0 1 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
         <!-- Small box -->
         <body pos="1 0.02 0.041" name="mediumCylinder">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0" size = "0.07 0.08" mass="2" rgba = "1 0 0 1" solimp="0.95 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.06 0.1" mass="1" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
         <!-- Big Box -->
         <body pos="1.5 0.02 0.041" name="bigBox">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.08 0.08 0.08" mass="2" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.009 1" condim="4" margin = "0.001"/>
+            <geom type = "box" pos = "0 0 0" size = "0.06 0.06 0.1" mass="2" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
         <!-- medium cylinder -->
-        <body pos="1.5 0.02 0.02" name="stackedCylinder">
+        <body pos="1.5 0.02 0.02" name="obstacle1">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0" size = "0.08 0.02" mass="0.8" rgba = "1 0 0 1" solimp="0.95 0.99 0.01 0.5 2" solref = "0.009 1" condim="4" margin = "0.001"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.05 0.05" mass="0.8" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
         <body pos="1.5 0.02 0.041" name="obstacle2">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0" size = "0.05 0.08" mass="2" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.05 0.05" mass="2" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
         <body pos="1.5 0.02 0.041" name="obstacle3">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.15" mass="0.8" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.05" mass="0.8" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
         <body pos="1.5 0.02 0.041" name="obstacle4">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.1" mass="0.8" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.06" mass="0.8" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
         <body pos="1.5 0.02 0.041" name="obstacle5">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.04 0.04 0.1" mass="0.8" rgba = "1 0 0 1" solimp="0.4 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="4" margin = "0.001"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.06" mass="0.8" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.1 0.8" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
         <body pos="1 0 0" name="display_goal">
             <joint type="free" />
-            <geom type = "box" pos = "1 0 0.01" size = ".01 .01 .01" mass="1" margin = "0.001"/>
-            <site type="cylinder" pos="0 0 -0.019" size="0.045 0.065" rgba="0 1 0 1"/>
+            <geom type = "box" pos = "0 0 0" size = ".0001 .0001 .0000001" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
+            <site type="cylinder" pos="0 0 0.085" size="0.06 0.085" rgba="0 1 0 0.4"/>
         </body>
 
         <body pos="1 0 0" name="display_intermediate">
             <joint type="free" />
-            <geom type = "box" pos = "1 0 0.01" size = ".01 .01 .01" mass="1" margin = "0.001"/>
-            <site type="box" pos="0 0 0" size=".02 .02 .02" rgba="0 0 1 1"/>
+            <geom type = "box" pos = "1 0 0.01" size = ".01 .01 .01" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4"/>
+            <site type="box" pos="0 0 0" size=".02 .02 .02" rgba="0 0 1 0.8"/>
         </body>
 
     </worldbody>
