@@ -5,7 +5,7 @@ Based on Coulomb's [1] rather than Spong's [2] model.
 [2] Spong, Mark W. "The swing up control problem for the acrobot."
     IEEE control systems 15, no. 1 (1995): 49-55.
 -->
-<mujoco model="acrobot">
+<mujoco model="double_pendulum">
   <include file="./common/visual.xml"/>
   <include file="./common/skybox.xml"/>
   <include file="./common/materials.xml"/>

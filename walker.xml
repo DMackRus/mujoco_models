@@ -1,11 +1,12 @@
 <mujoco model="Walker">
     <option timestep="0.004"/>
+    <size memory="512M" />
 
     <statistic extent="2" center="0 0 1"/>
 
     <default>
         <joint damping=".1" armature="0.01" limited="true" solimplimit="0 .99 .01"/>
-        <geom contype="1" conaffinity="0" friction=".7 .1 .1"/> <!-- solimp="0.4 0.99 0.001 2 0.5" solref = "0.02 0.9" /> -->
+        <geom contype="1" conaffinity="0" friction=".7 .1 .1" /> <!-- solimp="0.95 0.99 0.001 2 0.5" solref = "0.02 0.9" /> -->
         <motor ctrlrange="-1 1" ctrllimited="true"/>
         <site size="0.01"/>
         <default class="walker">
