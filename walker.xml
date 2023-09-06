@@ -1,6 +1,6 @@
 <mujoco model="Walker">
     <option timestep="0.004"/>
-    <size memory="512M" />
+    <size memory="2G" />
 
     <statistic extent="2" center="0 0 1"/>
 
