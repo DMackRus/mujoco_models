@@ -38,13 +38,13 @@
     </asset>
 
     <asset>
-        <hfield name = "hf1" file="assets/fractal_noise.png" size="10 2 0.5 2" />
+        <hfield name = "hf1" file="assets/hfield_custom.png" size="10 4 0.2 0.01" />
     </asset>
 
     <worldbody>
 
         <body name='floor' pos='0 0 0'>
-            <geom name='hfield1' pos='0.0 0 -0.1' hfield='hf1' type='hfield' condim='3' conaffinity='15'/>
+            <geom name='hfield1' pos='0.0 0 0.0' hfield='hf1' type='hfield' condim='3' conaffinity='15'/>
         </body>
 
 

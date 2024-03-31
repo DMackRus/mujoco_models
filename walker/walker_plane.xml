@@ -1,6 +1,6 @@
 <mujoco model="Walker">
     <option timestep="0.004"/>
-    <size memory="2G" />
+    <size memory="1G" />
 
     <statistic extent="2" center="0 0 1"/>
 
@@ -46,7 +46,7 @@
 
         <camera name="sideon" pos="0 -10 5" fovy="45" mode="targetbody" target="torso" />
         <camera name="float_far"  pos="-4 0 2" xyaxes="0 -1 0 .5 0 1" mode="trackcom" fovy="90"/>
-        <body name="torso" pos="0 0 1.3" childclass="walker"> <!-- pos = 0 0 1.3 -->
+        <body name="torso" pos="0 0 1.3" childclass="walker">
             <light name="light" pos="0 0 2" mode="trackcom"/>
             <camera name="floating"  pos="-2 0 1" xyaxes="0 -1 0 .5 0 1" mode="trackcom" fovy="90"/>
             <camera name="egocentric"  pos=".25 0 .11" xyaxes="0 -1 0 0 0 1" fovy="90" />
@@ -80,43 +80,6 @@
                 </body>
             </body>
         </body>
-
-<!--        <body pos="2.0 -0.1 0.3" name="obstacle1">-->
-<!--            <joint type="free" />-->
-<!--            <geom type = "box" pos = "0 0 0" size = "0.2 0.1 0.08" mass="1000" rgba = "0 1 0 1" condim="3" contype = "3" conaffinity = "3" margin = "0.01"/>-->
-<!--        </body>-->
-
-<!--        <body pos="2.0 0.1 0.3" name="obstacle2">-->
-<!--            <joint type="free" />-->
-<!--            <geom type = "box" pos = "0 0 0" size = "0.1 0.1 0.05" mass="1000" rgba = "0 1 0 1" condim="3" contype = "3" conaffinity = "3" margin = "0.01"/>-->
-<!--        </body>-->
-
-<!--        <body pos="3.0 0.1 0.3" name="obstacle3">-->
-<!--            <joint type="free" />-->
-<!--            <geom type = "box" pos = "0 0 0" size = "0.1 0.1 0.05" mass="1000" rgba = "0 1 0 1" condim="3" contype = "3" conaffinity = "3" margin = "0.01"/>-->
-<!--        </body>-->
-
-
-        <!--        <body pos="4.0 0 0.4" name="obstacle2">-->
-<!--            <joint type="free" />-->
-<!--            <geom type = "cylinder" pos = "0 0 0" quat = "0 0 1 1" size = "0.25 0.8" mass="1000" rgba = "0 1 0 1" solimp="0.0 0.99 0.01 0.5 2" solref = "0.02 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.01"/>-->
-<!--        </body>-->
-
-<!--        <body pos="4.5 0 0.2" name="obstacle3">-->
-<!--            <joint type="free" />-->
-<!--            <geom type = "box" pos = "0 0 0" size = "0.05 0.5 0.05" mass="1000" rgba = "0 1 0 1" solimp="0.0 0.99 0.01 0.5 2" solref = "0.02 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.01"/>-->
-<!--        </body>-->
-
-<!--        <body pos="5.0 0 0.4" name="obstacle4">-->
-<!--            <joint type="free" />-->
-<!--            <geom type = "cylinder" pos = "0 0 0" quat = "0 0 1 1" size = "0.25 0.8" mass="1000" rgba = "0 1 0 1" solimp="0.0 0.99 0.01 0.5 2" solref = "0.02 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.01"/>-->
-<!--        </body>-->
-
-<!--        <body pos="5.5 0 0.2" name="obstacle5">-->
-<!--            <joint type="free" />-->
-<!--            <geom type = "box" pos = "0 0 0" size = "0.05 0.5 0.05" mass="1000" rgba = "0 1 0 1" solimp="0.0 0.99 0.01 0.5 2" solref = "0.02 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.01"/>-->
-<!--        </body>-->
-
     </worldbody>
 
     <sensor>
