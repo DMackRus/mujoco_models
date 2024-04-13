@@ -1,0 +1,40 @@
+<mujoco model="piston_block">
+
+    <asset>
+        <!-- Define materials -->
+        <material name="block_mat" rgba="0.2 0.2 0.8 0.5"/>
+        <material name="rod_color" rgba="0.8 0.2 0.1 1"/>
+        <material name="goal_green" rgba="0 1 0 1"/>
+        <texture name="grid" type="2d" builtin="checker" rgb1=".1 .2 .3" rgb2=".2 .3 .4" width="300" height="300" mark="edge" markrgb=".2 .3 .4"/>
+        <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance=".2"/>
+
+    </asset>
+
+    <worldbody>
+        <light name="light" pos="0 0 6"/>
+        <geom name="floor" size="3 3 .2" type="plane" material="grid"/>
+
+        <!-- Define the piston -->
+        <body name="piston_base" pos="0 0 0.1">
+            <geom name = "base" type = "box" size = "0.1 0.2 0.1" material = "block_mat"/>
+
+            <body name = "piston_rod" pos = "0 0.2 0">
+
+                <joint name="rod" type="slide" axis="0 1 0" limited="true" range="-1 1"/>
+                <geom name = "rod" type = "capsule"  size="0.06" mass = "1" fromto="0 0 0  0 0.4 0" material="rod_color"/>
+
+            </body>
+        </body>
+
+        <body name="goal" pos = "0 1.0 0.2">
+            <geom type = "box" size="0.1 0.1 0.1" mass="1" material="goal_green"/>
+            <joint type="free" />
+        </body>
+
+    </worldbody>
+
+    <actuator>
+        <!-- Actuator to control piston movement -->
+        <motor name="piston_motor" joint="rod" ctrllimited="true" ctrlrange="-1 1" gear = "20"/>
+    </actuator>
+</mujoco>

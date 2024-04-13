@@ -16,7 +16,7 @@
         <include file="assets/chain0.xml"/>
         <body pos="0.5 0.0 0.1" name="sphere">
             <joint type="free" />
-            <geom type = "sphere" pos = "0 0 0" size = "0.1" mass="0.74" rgba = "0 1 0 1" solimp="0 0.4 0.005 0.5 2" solref = "0.1 0.8" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <geom type = "sphere" pos = "0 0 0" size = "0.1" mass="0.74" rgba = "0 1 0 1" solimp="0 0.4 0.001 0.5 2" solref = "0.2 0.7" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
         </body>
 
         <body pos="1 0 0" name="display_goal">
