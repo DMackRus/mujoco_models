@@ -1,0 +1,45 @@
+<mujoco model="penta_bot">
+    <include file="./common/visual.xml"/>
+    <include file="./common/skybox.xml"/>
+    <include file="./common/materials.xml"/>
+
+    <default>
+        <joint damping=".05"/>
+        <geom type="capsule" mass="1"/>
+    </default>
+
+    <worldbody>
+        <light name="light" pos="0 0 6"/>
+        <geom name="floor" size="3 3 .2" type="plane" material="grid"/>
+        <site name="target" type="sphere" pos="0 0 4" size="0.2" material="target" group="3"/>
+        <camera name="fixed" pos="0 -6 2" zaxis="0 -1 0"/>
+
+        <body name="arm_1" pos="0 0 3.0">
+            <joint name="arm_1_joint" type="hinge" axis="0 1 0"/>
+            <geom name="upper_arm_decoration" material="decoration" type="cylinder" fromto="0 -.06 0 0 .06 0" size="0.051" mass="0.1"/>
+            <geom name="upper_arm" fromto="0 0 0 0 0 0.5" size="0.05" material="self"/>
+            <body name="arm2" pos="0 0 0.5">
+                <joint name="arm_2_joint" type="hinge" axis="0 1 0"/>
+                <geom name="arm_2" fromto="0 0 0 0 0 0.25" size="0.049" material="self"/>
+                <body name="arm_3" pos="0 0 0.25">
+                    <joint name="arm_3_joint" type="hinge" axis="0 1 0"/>
+                    <geom name="arm_3" fromto="0 0 0 0 0 0.5" size="0.049" material="self"/>
+                    <body name="arm_4" pos="0 0 0.5">
+                        <joint name="arm_4_joint" type="hinge" axis="0 1 0"/>
+                        <geom name="arm_4" fromto="0 0 0 0 0 0.5" size="0.049" material="self"/>
+                        <body name="arm_5" pos="0 0 0.5">
+                            <joint name="arm_5_joint" type="hinge" axis="0 1 0"/>
+                            <geom name="arm_5" fromto="0 0 0 0 0 0.5" size="0.049" material="self"/>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+
+    <actuator>
+        <motor name="arm_1_motor" joint="arm_1_joint" gear="100" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="arm_3_motor" joint="arm_3_joint" gear="100" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="arm_5_motor" joint="arm_5_joint" gear="100" ctrllimited="true" ctrlrange="-1 1"/>
+    </actuator>
+</mujoco>
