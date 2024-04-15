@@ -12,7 +12,7 @@
 
     <worldbody>
         <light name="light" pos="0 0 6"/>
-        <geom name="floor" size="3 3 .2" type="plane" material="grid"/>
+        <geom name="floor" size="3 3 .2" type="plane" material="grid" conaffinity="7"/>
 
         <!-- Define the piston -->
         <body name="piston_base" pos="0 0 0.1">
@@ -29,6 +29,12 @@
         <body name="goal" pos = "0 1.0 0.2">
             <geom type = "box" size="0.1 0.1 0.1" mass="1" material="goal_green"/>
             <joint type="free" />
+        </body>
+
+        <body pos="0 1.0 0" name="display_goal">
+            <joint type="free" />
+            <geom type = "box" pos = "0 0 0" size = ".0001 .0001 .0000001" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
+            <site type="box" pos="0 0 0.1" size="0.1 0.1 0.1" rgba="0 1 0 0.4"/>
         </body>
 
     </worldbody>
