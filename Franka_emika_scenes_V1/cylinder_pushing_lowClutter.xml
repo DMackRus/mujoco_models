@@ -40,12 +40,6 @@
             <site type="cylinder" pos="0 0 0.085" size="0.06 0.085" rgba="0 1 0 0.4"/>
         </body>
 
-        <body pos="1 0 0" name="display_intermediate">
-            <joint type="free" />
-            <geom type = "box" pos = "1 0 0.01" size = ".01 .01 .01" mass="1" margin = "0.001"/>
-            <site type="box" pos="0 0 0" size=".02 .02 .02" rgba="0 0 1 1"/>
-        </body>
-
     </worldbody>
 
     <size njmax="500" nconmax="500"/>
