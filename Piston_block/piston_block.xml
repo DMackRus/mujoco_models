@@ -15,19 +15,24 @@
         <geom name="floor" size="3 3 .2" type="plane" material="grid" conaffinity="7"/>
 
         <!-- Define the piston -->
-        <body name="piston_base" pos="0 0 0.1">
-            <geom name = "base" type = "box" size = "0.1 0.2 0.1" material = "block_mat"/>
+<!--        <body name="piston_base" pos="0 0 0.1">-->
+<!--            <geom name = "base" type = "box" size = "0.1 0.2 0.1" material = "block_mat"/>-->
 
-            <body name = "piston_rod" pos = "0 0.2 0">
+<!--            <body name = "piston_rod" pos = "0 0.2 0">-->
 
-                <joint name="rod" type="slide" axis="0 1 0" limited="true" range="-1 1"/>
-                <geom name = "rod" type = "capsule"  size="0.06" mass = "1" fromto="0 0 0  0 0.4 0" material="rod_color"/>
+<!--                <joint name="rod" type="slide" axis="0 1 0" limited="true" range="-1 1"/>-->
+<!--                <geom name = "rod" type = "capsule"  size="0.06" mass = "1" fromto="0 0 0  0 0.4 0" material="rod_color"/>-->
 
-            </body>
+<!--            </body>-->
+<!--        </body>-->
+
+        <body name = "piston_rod" pos = "0 0.2 0.1">
+            <joint name="rod" type="slide" axis="0 1 0" limited="true" range="-2 2"/>
+            <geom name = "rod" type = "capsule"  size="0.06" mass = "1" fromto="0 0 0  0 0.4 0" material="rod_color" solimp = "0 0.4 0.001 0.5 0.2" solref = "0.1 0.9"/>
         </body>
 
         <body name="goal" pos = "0 1.0 0.2">
-            <geom type = "box" size="0.1 0.1 0.1" mass="1" material="goal_green"/>
+            <geom type = "box" size="0.1 0.1 0.1" mass="0.5" material="goal_green" solimp = "0 0.4 0.001 0.5 0.2" solref = "0.1 0.9" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
             <joint type="free" />
         </body>
 

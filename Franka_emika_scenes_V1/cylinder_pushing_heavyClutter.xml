@@ -14,7 +14,7 @@
     <worldbody>
         <!-- Include the franka_panda robot arm model -->
         <include file="assets/chain0.xml"/>
-        <body pos="0.7 0.02 0.041" name="blueTin">
+        <body pos="0.7 0.02 0.041" name="goal">
             <joint type="free" />
             <geom type = "cylinder" pos = "0 0 0" size = "0.05 0.06" mass="0.3" rgba = "0 1 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.08 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
