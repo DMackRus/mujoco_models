@@ -57,6 +57,21 @@
             <geom type = "cylinder" pos = "0 0 0" size = "0.06 0.05" mass="0.6" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.06 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>
         </body>
 
+<!--        <body pos="6.5 0.02 0.041" name="obstacle_8">-->
+<!--            <joint type="free" />-->
+<!--            <geom type = "cylinder" pos = "0 0 0" size = "0.06 0.05" mass="0.6" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.06 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>-->
+<!--        </body>-->
+
+<!--        <body pos="6.5 0.02 0.041" name="obstacle_9">-->
+<!--            <joint type="free" />-->
+<!--            <geom type = "cylinder" pos = "0 0 0" size = "0.06 0.05" mass="0.6" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.06 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>-->
+<!--        </body>-->
+
+<!--        <body pos="6.5 0.02 0.041" name="obstacle_10">-->
+<!--            <joint type="free" />-->
+<!--            <geom type = "cylinder" pos = "0 0 0" size = "0.06 0.05" mass="0.6" rgba = "1 0 0 1" solimp="0 0.99 0.01 0.5 2" solref = "0.06 1.1" condim="3" contype = "3" conaffinity = "3" margin = "0.001"/>-->
+<!--        </body>-->
+
         <body pos="1 0 0" name="display_goal">
             <joint type="free" />
             <geom type = "box" pos = "0 0 0" size = ".0001 .0001 .0000001" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
