@@ -14,6 +14,11 @@
 
     <worldbody>
         <include file="assets/chain0.xml"/>
+
+        <body name = "target" pos = "0.5 0 0.5" gravcomp = "1">
+            <joint type = "free"/>
+            <geom type = "sphere" size="0.1" rgba="0 1 0 0.5" contype="4" conaffinity="4"/>
+        </body>
     </worldbody>
 
     <include file='assets/actuator0.xml'/>
