@@ -1,0 +1,19 @@
+<mujoco model="Basic arm scene">
+    <include file="assets/basic_scene.xml"/>
+    <include file="assets/assets.xml"/>
+    <include file="assets/gripper_assets.xml"/>
+    <compiler meshdir=""/>
+
+    <worldbody>
+        <!-- Include the franka_panda robot arm model -->
+        <include file="assets/panda_with_pump.xml"/>
+
+        <body pos="0.8 0.0 0.1" name="cylinder">
+            <joint type="free" />
+            <geom type = "cylinder" pos = "0 0 0" size = "0.1 0.1" mass="0.74" rgba = "0 1 0 1" solimp="0 0.4 0.001 0.5 2" solref = "0.2 0.7" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+        </body>
+
+    </worldbody>
+
+    <include file='assets/actuator_positions.xml'/>
+</mujoco>
