@@ -13,7 +13,12 @@
             <geom type = "cylinder" pos = "0 0 0" size = "0.1 0.1" mass="0.74" rgba = "0 1 0 1" solimp="0 0.4 0.001 0.5 2" solref = "0.2 0.7" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
         </body>
 
+
     </worldbody>
 
     <include file='assets/actuator_positions.xml'/>
+
+    <keyframe>
+        <key name="pickup" qpos='-0.02967 0.311238 -0.0297623 -2.17053 -0.00527451 0.878428 -7.46668e-06 0.6 0.0 0.0917092 1 7.44959e-09 -9.92449e-18 -1.94908e-17'/>
+    </keyframe>
 </mujoco>
