@@ -51,9 +51,8 @@
                                             <geom type="cylinder" size="0.04 0.03" rgba="0.55 0.55 0.55 1.0"/>
                                             <site name="end_effector" pos="0.0 0.0 0.0" quat="0.7071068 0.7071068 0 0" rgba="1 0 0 1" type="sphere" size="0.004" />
                                             <inertial pos="-2.76618e-06 -0.00061547 0.0239295" quat="0.697945 0.716151 -0.000242485 8.47563e-05" mass="0.670782" diaginertia="0.00227632 0.00206087 0.000456542"/>
-
                                             <body name="pump_tip" pos="0.0 0.0 0.03">
-                                                <geom type="box" size="0.015 0.009 0.015" rgba="1.0 0.0 0.0 1.0"/>
+                                                <geom type="box" size="0.015 0.009 0.015" rgba="1.0 0.0 0.0 1.0" solimp="0.4 0.99 0.001 0.5 2" solref = "0.02 1.0"/>
                                                 <site name="force_sensor" />
                                             </body>
                                         </body>

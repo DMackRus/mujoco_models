@@ -8,17 +8,30 @@
         <!-- Include the franka_panda robot arm model -->
         <include file="assets/panda_with_pump.xml"/>
 
-        <body pos="0.8 0.0 0.1" name="cylinder">
+        <body pos="0.55 0 0.5" name="goal">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0" size = "0.1 0.1" mass="0.74" rgba = "0 1 0 1" solimp="0 0.4 0.001 0.5 2" solref = "0.2 0.7" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.05" mass="0.74" rgba = "0 1 0 1" solimp="0 0.4 0.001 0.5 2" solref = "0.06 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
         </body>
 
+        <!-- Top wall -->
+<!--        <geom type="box" pos="0.6 0 0.1" size="0.01 0.25 0.1" rgba="0.8 0.8 0.8 1"/>-->
+<!--        &lt;!&ndash; Right wall &ndash;&gt;-->
+<!--        <geom type="box" pos="0.45 0.25 0.1" size="0.15 0.01 0.1" rgba="0.8 0.8 0.8 1"/>-->
+<!--        &lt;!&ndash; Bottom wall &ndash;&gt;-->
+<!--        <geom type="box" pos="0.3 0 0.1" size="0.01 0.25 0.1" rgba="0.8 0.8 0.8 1"/>-->
+<!--        &lt;!&ndash; Left wall &ndash;&gt;-->
+<!--        <geom type="box" pos="0.45 -0.25 0.1" size="0.15 0.01 0.1" rgba="0.8 0.8 0.8 1"/>-->
+
+        <body pos="0.5 0.1 0" name="target">
+            <joint type="free" />
+            <geom type = "box" pos = "0 0 0" size = ".0001 .0001 .0000001" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
+            <site type="cylinder" pos="0 0 0.085" size="0.06 0.085" rgba="0 1 0 0.4"/>
+        </body>
 
     </worldbody>
 
-    <include file='assets/actuator_positions.xml'/>
-
-    <keyframe>
-        <key name="pickup" qpos='-0.02967 0.311238 -0.0297623 -2.17053 -0.00527451 0.878428 -7.46668e-06 0.6 0.0 0.0917092 1 7.44959e-09 -9.92449e-18 -1.94908e-17'/>
-    </keyframe>
+    <include file='assets/actuator_torques.xml'/>
+<!--    <keyframe>-->
+<!--        <key name="pickup" qpos='-0.02967 0.311238 -0.0297623 -2.17053 -0.00527451 0.878428 -7.46668e-06 0.6 0.0 0.0917092 1 7.44959e-09 -9.92449e-18 -1.94908e-17'/>-->
+<!--    </keyframe>-->
 </mujoco>
