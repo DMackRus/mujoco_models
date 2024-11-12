@@ -16,7 +16,7 @@
 		<motor joint='panda0_joint6' name='panda0_joint6' class="panda" gear="1" ctrllimited="true" forcerange="-12 12" ctrlrange="-12 12"/>
 		<motor joint='panda0_joint7' name='panda0_joint7' class="panda" gear="1" ctrllimited="true" forcerange="-12 12" ctrlrange="-12 12"/>
 
-		<adhesion name="adhere_pump" body="pump_tip" ctrlrange="0 5" gain="10"/>
+		<!-- <adhesion name="adhere_pump" body="pump_tip" ctrlrange="0 5" gain="10"/> -->
     </actuator>
 
 	<sensor>
