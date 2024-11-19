@@ -30,9 +30,10 @@
         <!-- Left wall -->
         <geom type="box" pos="0.45 -0.25 0.1" size="0.15 0.01 0.1" rgba="0.8 0.8 0.8 1"/>
 
-        <body pos="0.5 0.1 0" name="target">
+        <body pos="0.5 0.1 0" name="target" gravcomp="1">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0.085" size = "0.06 0.085" rgba = "0 1 0 0.4" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
+            <site name="display" pos="0 0 0" rgba="1 0 0 1"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.05" rgba = "0 1 0 0.4" mass="1" margin = "0.001" contype = "8" conaffinity = "8" />
         </body>
 
     </worldbody>
