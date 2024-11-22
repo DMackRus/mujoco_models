@@ -15,7 +15,7 @@
         <body pos="0.55 0 0.5" name="goal">
             <joint type="free" />
             <site name="b1" pos="0 0 -0.05" rgba="1 0 0 1"/>
-            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.05" mass="0.5" rgba = "0 1 0 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.02 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.05" mass="0.5" rgba = "0 1 0 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.04 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
             <!--  condim="1" contype = "3" conaffinity = "3" -->
         </body>
 
