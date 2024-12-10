@@ -1,0 +1,31 @@
+<mujoco model="floating_cube">
+    <!-- Include default options for visualization -->
+    <visual>
+        <map znear="0.01" zfar="50" />
+    </visual>
+
+    <option gravity="0 0 0" integrator="RK4" timestep="0.002" />
+
+    <!-- Define a floating cube body -->
+    <worldbody>
+        <body name="floating_cube" pos="0 0 0.2" quat="0.707 0.707 0 0">
+            <!-- Add the cube geometry -->
+            <joint name="free_joint" type="free" />
+            <geom name="cube_geom" type="box" size="0.1 0.1 0.1" rgba="0 0.5 1 1" />
+        </body>
+
+        <body pos="0 0 0" name="target" gravcomp="1">
+            <joint name="target_joint" type="free" />
+<!--            <site name="display" pos="0 0 0" rgba="1 0 0 1"/>-->
+            <geom type = "box" size = "0.1 0.1 0.1" rgba = "0 1 0 0.4" mass="1" contype = "4" conaffinity = "4" />
+        </body>
+
+    </worldbody>
+
+    <!-- Actuators for the rotational axes -->
+    <actuator>
+        <motor name="roll_motor" joint="free_joint" gear="0 0 0 1 0 0" />
+        <motor name="pitch_motor" joint="free_joint" gear="0 0 0 0 1 0" />
+        <motor name="yaw_motor" joint="free_joint" gear="0 0 0 0 0 1" />
+    </actuator>
+</mujoco>
