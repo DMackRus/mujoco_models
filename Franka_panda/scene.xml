@@ -12,14 +12,14 @@
         <!-- Include the franka_panda robot arm model -->
         <include file="assets/panda_with_pump.xml"/>
 
-        <body pos="0.55 0 0.5" name="goal">
+        <body pos="0.55 0 0.5" name="Tomato_Sauce">
             <joint type="free" />
             <site name="b1" pos="0 0 -0.05" rgba="1 0 0 1"/>
-            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.05" mass="0.5" rgba = "0 1 0 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.04 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <geom type = "box" pos = "0 0 0" size = "0.0475 0.045 0.03" mass="0.5" rgba = "0 1 0 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.04 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
             <!--  condim="1" contype = "3" conaffinity = "3" -->
         </body>
 
-        <body pos="0.5 0.1 0" name="obstacle_1">
+        <!-- <body pos="0.5 0.1 0" name="obstacle_1">
             <joint type="free" />
             <geom type = "cylinder" pos = "0 0 0" size = "0.05 0.02" rgba = "1 0 0 0.4" mass="0.5" margin = "0.001" solimp="0.9 0.95 0.001 0.5 2" solref = "0.02 1.0"/>
         </body>
@@ -32,7 +32,7 @@
         <body pos="0.5 0.1 0" name="obstacle_3">
             <joint type="free" />
             <geom type = "box" pos = "0 0 0" size = "0.04 0.05 0.04" rgba = "1 0 0 0.4" mass="1" margin = "0.001" solimp="0.9 0.95 0.001 0.5 2" solref = "0.02 1.0" />
-        </body>
+        </body> -->
 
 <!--        <site name="a1" pos = "2 0 0" />-->
 
