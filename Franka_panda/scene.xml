@@ -14,8 +14,8 @@
 
         <body pos="0.55 0 0.5" name="Tomato_Sauce">
             <joint type="free" />
-            <site name="b1" pos="0 0 -0.05" rgba="1 0 0 1"/>
-            <geom type = "box" pos = "0 0 0" size = "0.0475 0.045 0.03" mass="0.5" rgba = "0 1 0 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.04 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <site name="b1" pos="0 0 -0.035" rgba="1 0 0 1"/>
+            <geom type = "box" pos = "0 0 0" size = "0.0475 0.045 0.03" mass="0.5" rgba = "0 0.5 0.5 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.04 1" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
             <!--  condim="1" contype = "3" conaffinity = "3" -->
         </body>
 
@@ -56,7 +56,7 @@
     <include file='assets/actuator_torques.xml'/>
 
     <equality>
-        <weld name="pump weld" site1="force_sensor" site2="b1" solimp="0 0.99 0.001 0.5 2" solref = "0.02 1.0"/>
+        <weld name="pump weld" site1="force_sensor" site2="b1" solimp="0 0.99 0.001 0.5 2" solref = "0.04 1.0"/>
     </equality>
 <!--    <keyframe>-->
 <!--        <key name="pickup" qpos='-0.02967 0.311238 -0.0297623 -2.17053 -0.00527451 0.878428 -7.46668e-06 0.6 0.0 0.0917092 1 7.44959e-09 -9.92449e-18 -1.94908e-17'/>-->
