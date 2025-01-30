@@ -12,7 +12,7 @@
         <!-- Include the franka_panda robot arm model -->
         <include file="assets/panda_with_pump.xml"/>
 
-        <body pos="0.55 0 0.5" name="Tomato_Sauce">
+        <body pos="0.55 0 0.5" quat = "0 0 0 1" name="Tomato_Sauce">
             <joint type="free" />
             <site name="b1" pos="0 0.007 -0.031" rgba="1 0 0 1"/>
             <site name="b2" pos="0 -0.007 -0.031" rgba="1 0 0 1"/>
