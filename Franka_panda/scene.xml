@@ -16,17 +16,17 @@
             <joint type="free" />
             <site name="b1" pos="0 0.007 -0.031" rgba="1 0 0 1"/>
             <site name="b2" pos="0 -0.007 -0.031" rgba="1 0 0 1"/>
-            <geom type = "box" pos = "0 0 0" size = "0.0475 0.045 0.03" mass="0.5" rgba = "0 0.5 0.5 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.04 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <geom type = "box" pos = "0 0 0" size = "0.0475 0.045 0.03" mass="0.5" rgba = "0 0.5 0.5 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.06 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
         </body>
 
         <body pos="0.5 0.1 0" name="Hot_Chocolate">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0" size = "0.045 0.07" rgba = "1 0 0 0.4" mass="0.574" friction = "1 0.5 0.1" margin = "0.001" solimp="0.9 0.95 0.001 0.5 2" solref = "0.02 1.0"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.045 0.07" rgba = "1 0 0 0.4" mass="0.574" friction = "1 0.5 0.1" margin = "0.001" solimp="0 0.95 0.001 0.5 2" solref = "0.04 1.0"/>
         </body>
 
         <body pos="0.5 0.2 0" name="Tomato_Soup">
             <joint type="free" />
-            <geom type = "cylinder" pos = "0 0 0" size = "0.035 0.05" rgba = "1 0 0 0.4" mass="0.305" friction = "1 0.5 0.1" margin = "0.001" solimp="0.9 0.95 0.001 0.5 2" solref = "0.02 1.0" />
+            <geom type = "cylinder" pos = "0 0 0" size = "0.035 0.05" rgba = "1 0 0 0.4" mass="0.305" friction = "1 0.5 0.1" margin = "0.001" solimp="0 0.95 0.001 0.5 2" solref = "0.04 1.0" />
         </body>
 
 <!--        <body pos="0.5 0.1 0" name="obstacle_3">-->
