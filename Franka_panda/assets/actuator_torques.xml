@@ -21,5 +21,8 @@
 
 	<sensor>
 		<force site="force_sensor"/>
+		<framepos name="site_position_sensor" objtype="site" objname="b1"/>
+		<framequat name="site_orientation_sensor" objtype="site" objname="b1"/>
+		<framelinvel name="site_linear_velocity_sensor" objtype="site" objname="b1"/>
 	</sensor>
 </mujocoinclude>

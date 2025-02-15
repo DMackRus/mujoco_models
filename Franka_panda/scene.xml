@@ -12,12 +12,12 @@
         <!-- Include the franka_panda robot arm model -->
         <include file="assets/panda_with_pump.xml"/>
 
-        <body pos="0.55 0 0.5" quat = "0 0 0 1" name="Tomato_Sauce">
-            <joint type="free" />
-            <site name="b1" pos="0 0 -0.031" quat = "0 0 0 1" rgba="1 0 0 1"/>
-<!--            <site name="b2" pos="0 -0.007 0.031" rgba="1 0 0 1"/>-->
-            <geom type = "box" pos = "0 0 0" size = "0.045 0.0475 0.03" mass="0.5" rgba = "0 0.5 0.5 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.06 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
-        </body><!-- size = "0.0475 0.045 0.03" -->
+<!--        <body pos="0.55 0 0.5" quat = "0 0 0 1" name="Tomato_Sauce">-->
+<!--            <joint type="free" />-->
+<!--            <site name="b1" pos="0 0 -0.031" quat = "0 0 0 1" rgba="1 0 0 1"/>-->
+<!--&lt;!&ndash;            <site name="b2" pos="0 -0.007 0.031" rgba="1 0 0 1"/>&ndash;&gt;-->
+<!--            <geom type = "box" pos = "0 0 0" size = "0.045 0.0475 0.03" mass="0.5" rgba = "0 0.5 0.5 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.06 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>-->
+<!--        </body>&lt;!&ndash; size = "0.0475 0.045 0.03" &ndash;&gt;-->
 
         <body pos="0.5 0.1 0" name="Hot_Chocolate">
             <joint type="free" />
@@ -55,11 +55,8 @@
 
     <include file='assets/actuator_torques.xml'/>
 
-    <equality>
-        <weld name="pump weld" site1="force_sensor" site2="b1" solimp="0.4 0.99 0.001 0.5 2" solref = "0.02 1"/>
-<!--        <weld name="pump weld2" site1="e1" site2="b2" solimp="0.4 0.99 0.001 0.5 2" solref = "0.02 1.0"/>-->
-    </equality>
-<!--    <keyframe>-->
-<!--        <key name="pickup" qpos='-0.02967 0.311238 -0.0297623 -2.17053 -0.00527451 0.878428 -7.46668e-06 0.6 0.0 0.0917092 1 7.44959e-09 -9.92449e-18 -1.94908e-17'/>-->
-<!--    </keyframe>-->
+<!--    <equality>-->
+<!--        <weld name="pump weld" site1="force_sensor" site2="b1" solimp="0.4 0.99 0.001 0.5 2" solref = "0.02 1"/>-->
+<!--    </equality>-->
+
 </mujoco>

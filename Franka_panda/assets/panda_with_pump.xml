@@ -52,10 +52,13 @@
                                             <site name="end_effector" pos="0.0 0.0 0.0" quat="0.7071068 0.7071068 0 0" rgba="1 0 0 1" type="sphere" size="0.004" />
                                             <inertial pos="-2.76618e-06 -0.00061547 0.0239295" quat="0.697945 0.716151 -0.000242485 8.47563e-05" mass="0.670782" diaginertia="0.00227632 0.00206087 0.000456542"/>
                                             <body name="pump_tip" pos="0.0 0.0 0.158">
-                                                <geom type="cylinder" size="0.0143 0.12" rgba="1.0 0.0 0.0 1.0" solimp="0 0.9 0.001 0.5 2" solref = "0.03 1.0"/>
-                                                <!-- size="0.0143 0.12" -->
+                                                <geom type="cylinder" size="0.0143 0.12" rgba="1.0 0.0 0.0 1.0" mass = "0.33" solimp="0 0.9 0.001 0.5 2" solref = "0.03 1.0"/>
                                                 <site name="force_sensor" pos ="0 0 0.119" quat = "0 0 0 1" rgba="0 0 1 1"/>
-<!--                                                <site name = "e1" pos = "0 0.007 0.121" rgba="0 0 1 1"/>-->
+                                                <body pos="0 0 0.150" quat = "0 0 0 1" name="Tomato_Sauce">
+<!--                                                    <site name="b1" pos="0 0 -0.031" quat = "0 0 0 1" rgba="1 0 0 1"/>-->
+                                                    <site name="b1" pos="0 0 0" quat = "0 0 0 1" rgba="1 0 0 1"/>
+                                                    <geom type = "box" pos = "0 0 0" size = "0.045 0.0475 0.03" mass="0.5" rgba = "0 0.5 0.5 0.7" solimp="0 0.9 0.001 0.5 2" solref = "0.06 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+                                                </body><!-- size = "0.0475 0.045 0.03" -->
                                             </body>
                                         </body>
                                     </body>
