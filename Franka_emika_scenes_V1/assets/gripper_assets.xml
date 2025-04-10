@@ -54,7 +54,7 @@
 <!--        <mesh file="meshes/collision/finger_0.obj"/>-->
 <!--        <mesh file="meshes/collision/finger_1.obj"/>-->
         <mesh file="meshes/visual/finger.obj"/>
-        <mesh file="meshes/visual/finger.obj"/>
+<!--        <mesh file="meshes/visual/finger.obj"/>-->
 
     </asset>
 

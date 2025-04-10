@@ -74,7 +74,7 @@
 
         <body pos="1 0 0" name="display_goal">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = ".0001 .0001 .0000001" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
+            <geom type = "box" pos = "0 0 0" size = ".1 .1 .1" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
             <site type="cylinder" pos="0 0 0.085" size="0.06 0.085" rgba="0 1 0 0.4"/>
         </body>
 

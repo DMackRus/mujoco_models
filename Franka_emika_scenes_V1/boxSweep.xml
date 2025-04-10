@@ -16,12 +16,12 @@
         <include file="assets/chain0.xml"/>
         <body pos="0.5 0.0 0.16" name="goal">
             <joint type="free" />                                                           <!-- solimp="0 0.9 0.005 0.5 2" solref = "0.2 0.8"  -->
-            <geom type = "box" pos = "0 0 0" size = "0.15 0.1 0.08" mass="1" rgba = "0 1 0 1" solimp = "0 0.4 0.001 0.5 0.2" solref = "0.1 0.7" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <geom type = "box" pos = "0 0 0" size = "0.15 0.1 0.08" mass="1" rgba = "0 1 0 1" solimp = "0 0.9 0.001 0.5 0.2" solref = "0.04 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
         </body>                                                                                <!-- solimp = "0 0.4 0.001 0.5 0.2" solref = "0.1 0.7" -->
 
         <body pos="1 0 0" name="display_goal">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = ".0001 .0001 .0000001" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
+            <geom type = "box" pos = "0 0 0" size = ".1 .1 .1" rgba = "0 0 0 0" mass="1" margin = "0.001" contype = "4" conaffinity = "4" />
             <site type="box" pos="0 0 0.08" size="0.15 0.1 0.08" rgba="0 1 0 0.4"/>
         </body>
 
