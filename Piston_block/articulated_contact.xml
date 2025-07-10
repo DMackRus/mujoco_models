@@ -1,0 +1,61 @@
+<mujoco model="articulated_contact">
+
+    <default>
+        <joint damping=".05"/>
+        <geom type="capsule" mass="1"/>
+    </default>
+
+    <asset>
+        <!-- Define materials -->
+        <material name="block_mat" rgba="0.2 0.2 0.8 0.5"/>
+        <material name="rod_color" rgba="0.8 0.2 0.1 1"/>
+        <material name="goal_green" rgba="0 1 0 1"/>
+        <texture name="grid" type="2d" builtin="checker" rgb1=".1 .2 .3" rgb2=".2 .3 .4" width="300" height="300" mark="edge" markrgb=".2 .3 .4"/>
+        <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance=".2"/>
+        <material name="decoration" rgba=".3 .5 .7 1"/>
+        <material name="self" rgba=".7 .5 .3 1"/>-->
+    </asset>
+
+<!--    <asset>-->
+<!--        <texture name="grid" type="2d" builtin="checker" rgb1=".1 .2 .3" rgb2=".2 .3 .4" width="300" height="300" mark="edge" markrgb=".2 .3 .4"/>-->
+<!--        <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance=".2"/>-->
+<!--        <material name="self" rgba=".7 .5 .3 1"/>-->
+<!--        <material name="self_default" rgba=".7 .5 .3 1"/>-->
+<!--        <material name="self_highlight" rgba="0 .5 .3 1"/>-->
+<!--        <material name="effector" rgba=".7 .4 .2 1"/>-->
+<!--        <material name="effector_default" rgba=".7 .4 .2 1"/>-->
+<!--        <material name="effector_highlight" rgba="0 .5 .3 1"/>-->
+<!--        <material name="decoration" rgba=".3 .5 .7 1"/>-->
+<!--        <material name="eye" rgba="0 .2 1 1"/>-->
+<!--        <material name="target" rgba=".6 .3 .3 1"/>-->
+<!--        <material name="target_default" rgba=".6 .3 .3 1"/>-->
+<!--        <material name="target_highlight" rgba=".6 .3 .3 .4"/>-->
+<!--        <material name="site" rgba=".5 .5 .5 .3"/>-->
+<!--    </asset>-->
+
+    <worldbody>
+        <light name="light" pos="0 0 6"/>
+        <geom name="floor" size="3 3 .2" type="plane" material="grid" conaffinity="7"/>
+        <body name="upper_arm" pos="0 0 2.2">
+            <joint name="shoulder" type="hinge" axis="0 1 0"/>
+            <geom name="upper_arm_decoration" material="decoration" type="cylinder" fromto="0 -.06 0 0 .06 0" size="0.051" mass="0.1"/> <!-- material="decoration" -->
+            <geom name="upper_arm" fromto="0 0 0 0 0 1" size="0.05" material="self" solimp = "0 0.99 0.001 0.5 0.2" solref = "0.06 0.8"/>
+            <body name="lower_arm" pos="0 0 1">
+                <joint name="elbow" type="hinge" axis="0 1 0"/>
+                <geom name="lower_arm" fromto="0 0 0 0 0 1" size="0.049" material="self" solimp = "0 0.99 0.001 0.5 0.2" solref = "0.06 0.8"/>
+                <site name="tip" pos="0 0 1" size="0.01"/>
+            </body>
+        </body>
+
+        <body name="goal" pos = "0 0 0.1">
+            <geom type = "box" size="0.3 0.1 0.1" mass="0.5" material="goal_green" solimp = "0 0.99 0.001 0.5 0.2" solref = "0.06 0.8" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <joint type="free" />
+        </body>
+    </worldbody>
+
+    <actuator>
+        <!-- Actuator for pendubot -->
+<!--        <motor name="shoulder" joint="shoulder" ctrllimited="true" ctrlrange="-1 1" gear = "20"/>-->
+        <motor name="elbow" joint="elbow" ctrllimited="true" ctrlrange="-1 1" gear = "20"/>
+    </actuator>
+</mujoco>
