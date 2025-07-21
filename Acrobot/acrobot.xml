@@ -46,6 +46,6 @@ Based on Coulomb's [1] rather than Spong's [2] model.
     </worldbody>
 
     <actuator>
-        <motor name="shoulder" joint="shoulder" gear="100" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="elbow" joint="elbow" gear="100" ctrllimited="true" ctrlrange="-1 1"/>
     </actuator>
 </mujoco>
