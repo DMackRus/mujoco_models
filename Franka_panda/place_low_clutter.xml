@@ -1,0 +1,46 @@
+<mujoco model="Basic arm scene">
+    <include file="assets/basic_scene.xml"/>
+    <include file="assets/assets.xml"/>
+<!--    <include file="assets/gripper_assets.xml"/>-->
+    <compiler meshdir=""/>
+
+    <option>
+        <flag multiccd="enable"/>
+    </option>
+
+    <worldbody>
+        <!-- Include the franka_panda robot arm model -->
+        <include file="assets/panda_with_pump.xml"/>
+
+<!--        <body pos="0.55 0 0.5" quat = "0 0 0 1" name="Tomato_Sauce">-->
+<!--            <joint type="free" />-->
+<!--            <site name="b1" pos="0 0 -0.031" quat = "0 0 0 1" rgba="1 0 0 1"/>-->
+<!--&lt;!&ndash;            <site name="b2" pos="0 -0.007 0.031" rgba="1 0 0 1"/>&ndash;&gt;-->
+<!--            <geom type = "box" pos = "0 0 0" size = "0.045 0.0475 0.03" mass="0.5" rgba = "0 0.5 0.5 0.9" solimp="0 0.9 0.001 0.5 2" solref = "0.06 1.0" condim="1" margin = "0.001" contype = "3" conaffinity = "3"/>-->
+<!--        </body>&lt;!&ndash; size = "0.0475 0.045 0.03" &ndash;&gt;-->
+
+        <body pos="0.5 0.1 0" name="Hot_Chocolate">
+            <joint type="free" />
+            <geom type = "cylinder" pos = "0 0 0" size = "0.045 0.07" rgba = "1 0 0 0.4" mass="0.574" friction = "1 0.5 0.1" margin = "0.001" solimp="0 0.95 0.001 0.5 2" solref = "0.04 1.0"/>
+        </body>
+
+        <body pos="0.5 0.2 0" name="Tomato_Soup">
+            <joint type="free" />
+            <geom type = "cylinder" pos = "0 0 0" size = "0.035 0.05" rgba = "1 0 0 0.4" mass="0.305" friction = "1 0.5 0.1" margin = "0.001" solimp="0 0.95 0.001 0.5 2" solref = "0.04 1.0" />
+        </body>
+
+        <body pos="0.5 0.1 0" name="target" gravcomp="1">
+            <joint type="free" />
+            <site name="display" pos="0 0 0" rgba="1 0 0 1"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.04 0.05" rgba = "0 1 0 0.4" mass="1" margin = "0.001" contype = "8" conaffinity = "8" />
+        </body>
+
+    </worldbody>
+
+    <include file='assets/actuator_torques.xml'/>
+
+<!--    <equality>-->
+<!--        <weld name="pump weld" site1="force_sensor" site2="b1" solimp="0.4 0.99 0.001 0.5 2" solref = "0.02 1"/>-->
+<!--    </equality>-->
+
+</mujoco>
