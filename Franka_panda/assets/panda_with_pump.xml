@@ -57,8 +57,9 @@
                                                 <body pos="0 0 0.150" euler="0 0 0.7854" name="Tomato_Sauce">
                                                     <!-- quat = "0 0 0 1" -->
 <!--                                                    <site name="b1" pos="0 0 -0.031" quat = "0 0 0 1" rgba="1 0 0 1"/>-->
+                                                    <!-- This below site and box are hardcoded for a specific object of tomate passata at the moment -->
                                                     <site name="b1" pos="0 0 0" quat = "0 0 0 1" rgba="1 0 0 1"/>
-                                                    <geom type = "box" pos = "0 0 0" size = "0.045 0.0475 0.03" mass="0.5" rgba = "1.0 0 0 0.6" solimp="0.4 0.9 0.01 0.5 2" solref = "0.05 0.7" condim="3" margin = "0.001" contype = "3" conaffinity = "3"/>
+                                                    <geom type = "box" pos = "0 0 0" size = "0.045 0.048 0.031" mass="0.518" rgba = "1.0 0 0 0.6" solimp="0.4 0.9 0.01 0.5 2" solref = "0.05 0.7" condim="3" margin = "0.001" contype = "3" conaffinity = "3"/>
                                                 </body><!-- size = "0.0475 0.045 0.03" -->
                                             </body>
                                         </body>
