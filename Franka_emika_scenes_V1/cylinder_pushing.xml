@@ -18,7 +18,7 @@
             <joint type="free" />
             <!-- "0.085 0.08" mass="0.74" -->
             <!-- size = "0.04 0.06 0.085" -->
-            <geom type = "cylinder" pos = "0 0 0" size = "0.06 0.085" mass="1" rgba = "0 1 0 1" solimp="0 0.9 0.001 0.5 2" solref = "0.06 1" condim="3" margin = "0.001" contype = "3" conaffinity = "3"/>
+            <geom type = "cylinder" pos = "0 0 0" size = "0.06 0.085" mass="1" rgba = "0 1 0 1" solimp="0 0.9 0.001 0.5 2" solref = "0.04 1" condim="3" margin = "0.001" contype = "3" conaffinity = "3"/>
         </body>
 
         <body pos="1 0 0" name="display_goal">
