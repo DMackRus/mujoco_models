@@ -134,7 +134,7 @@
     <light name="spotlight" mode="targetbodycom" target="base" pos="0 -1 2" cutoff="30"/>
     <body name="base" pos="0 0 0.58" quat="0 0 0 1" childclass="anymal_b">
       <site name="base_site" pos="0 0 0" size="0.01"/>
-      <freejoint/>
+      <freejoint name="base"/>
       <inertial mass="19.2035" pos="0.0025 0 0.0502071" quat="0.5 0.5 0.5 0.5" diaginertia="0.639559 0.624031 0.217374"/>
       <geom class="visual" mesh="anymal_base_0" material="yellow_emcy"/>
       <geom class="visual" mesh="anymal_base_1" material="rot_emcy"/>
@@ -338,33 +338,33 @@
     <exclude body1="base" body2="RH_THIGH"/>
   </contact>
 
-<!--  <actuator>-->
-<!--    <position class="affine" joint="LF_HAA" name="LF_HAA"/>-->
-<!--    <position class="affine" joint="LF_HFE" name="LF_HFE"/>-->
-<!--    <position class="affine" joint="LF_KFE" name="LF_KFE"/>-->
-<!--    <position class="affine" joint="RF_HAA" name="RF_HAA"/>-->
-<!--    <position class="affine" joint="RF_HFE" name="RF_HFE"/>-->
-<!--    <position class="affine" joint="RF_KFE" name="RF_KFE"/>-->
-<!--    <position class="affine" joint="LH_HAA" name="LH_HAA"/>-->
-<!--    <position class="affine" joint="LH_HFE" name="LH_HFE"/>-->
-<!--    <position class="affine" joint="LH_KFE" name="LH_KFE"/>-->
-<!--    <position class="affine" joint="RH_HAA" name="RH_HAA"/>-->
-<!--    <position class="affine" joint="RH_HFE" name="RH_HFE"/>-->
-<!--    <position class="affine" joint="RH_KFE" name="RH_KFE"/>-->
-<!--  </actuator>-->
   <actuator>
-    <motor joint="LF_HAA" name="LF_HAA" gear="20"/>
-    <motor joint="LF_HFE" name="LF_HFE" gear="20"/>
-    <motor joint="LF_KFE" name="LF_KFE" gear="20"/>
-    <motor joint="RF_HAA" name="RF_HAA" gear="20"/>
-    <motor joint="RF_HFE" name="RF_HFE" gear="20"/>
-    <motor joint="RF_KFE" name="RF_KFE" gear="20"/>
-    <motor joint="LH_HAA" name="LH_HAA" gear="20"/>
-    <motor joint="LH_HFE" name="LH_HFE" gear="20"/>
-    <motor joint="LH_KFE" name="LH_KFE" gear="20"/>
-    <motor joint="RH_HAA" name="RH_HAA" gear="20"/>
-    <motor joint="RH_HFE" name="RH_HFE" gear="20"/>
-    <motor joint="RH_KFE" name="RH_KFE" gear="20"/>
+    <position class="affine" joint="LF_HAA" name="LF_HAA"/>
+    <position class="affine" joint="LF_HFE" name="LF_HFE"/>
+    <position class="affine" joint="LF_KFE" name="LF_KFE"/>
+    <position class="affine" joint="RF_HAA" name="RF_HAA"/>
+    <position class="affine" joint="RF_HFE" name="RF_HFE"/>
+    <position class="affine" joint="RF_KFE" name="RF_KFE"/>
+    <position class="affine" joint="LH_HAA" name="LH_HAA"/>
+    <position class="affine" joint="LH_HFE" name="LH_HFE"/>
+    <position class="affine" joint="LH_KFE" name="LH_KFE"/>
+    <position class="affine" joint="RH_HAA" name="RH_HAA"/>
+    <position class="affine" joint="RH_HFE" name="RH_HFE"/>
+    <position class="affine" joint="RH_KFE" name="RH_KFE"/>
   </actuator>
+<!--  <actuator>-->
+<!--    <motor joint="LF_HAA" name="LF_HAA" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="LF_HFE" name="LF_HFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="LF_KFE" name="LF_KFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="RF_HAA" name="RF_HAA" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="RF_HFE" name="RF_HFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="RF_KFE" name="RF_KFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="LH_HAA" name="LH_HAA" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="LH_HFE" name="LH_HFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="LH_KFE" name="LH_KFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="RH_HAA" name="RH_HAA" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="RH_HFE" name="RH_HFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="RH_KFE" name="RH_KFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--  </actuator>-->
 
 </mujoco>
