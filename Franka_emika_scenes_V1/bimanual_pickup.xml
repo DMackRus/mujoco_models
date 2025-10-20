@@ -12,7 +12,7 @@
 <!--            <flag solver="Newton"/>-->
 <!--        </option>-->
 
-<!--    <option impratio="1"/>-->
+    <option impratio="1"/>
 <!--    <option cone="pyramidal"/>-->
 <!--    <option solver="PGS"/>-->
     <option noslip_iterations="1"/>
@@ -22,7 +22,7 @@
         <include file="assets/two_arms.xml"/>
         <body pos="0.2 0.0 0.16" name="goal">
             <joint type="free" />
-            <geom type = "box" pos = "0 0 0" size = "0.15 0.1 0.08" mass="0.5" rgba = "0 1 0 1" solimp = "0.0 0.5 0.001 0.5 1" solref = "0.04 1.2" condim="6" margin = "0.001" contype = "3" conaffinity = "3" />
+            <geom type = "box" pos = "0 0 0" size = "0.5 0.1 0.08" mass="0.7" rgba = "0 1 0 1" solimp = "0.0 0.5 0.001 0.5 1" solref = "0.06 1.2" condim="6" margin = "0.001" contype = "3" conaffinity = "3" />
         </body>
 
 <!--        <body pos="1 0 0" name="display_goal">-->
@@ -36,7 +36,16 @@
             <geom type = "sphere" size="0.1" rgba="0 1 0 0.5" contype="4" conaffinity="4"/>
         </body>
 
+
+
     </worldbody>
+
+    <sensor>
+        <framepos name="panda_0_EE" objtype="site" objname="panda0_end_effector"/>
+        <framepos name="panda_1_EE" objtype="site" objname="panda1_end_effector"/>
+<!--        <framequat name="site_orientation_sensor" objtype="site" objname="b1"/>-->
+<!--        <framelinvel name="site_linear_velocity_sensor" objtype="site" objname="b1"/>-->
+    </sensor>
 
 <!--    <size njmax="500" nconmax="500"/>-->
 

@@ -42,7 +42,7 @@
             </default>
 
             <default class="panda_col"> <!-- solref="0.04 0.8" solimp="0 0.8 0.001 0.5 1" condim="6" -->
-                <geom contype="1" conaffinity="1" group="3" type="mesh" rgba=".5 .6 .7 1" solref="0.04 1.2" solimp="0.0 0.6 0.001 0.5 1" condim="6"/>
+                <geom contype="1" conaffinity="1" group="3" type="mesh" rgba=".5 .6 .7 1" solref="0.06 1.2" solimp="0.0 0.5 0.001 0.5 1" condim="6"/>
             </default>
             <default class="panda_arm">
                 <joint damping="100"/>
@@ -53,7 +53,7 @@
              <default class="panda_finger">
                 <joint damping="100" armature='5'/>
                  <!-- <geom friction="1 0.5 0.0001" solref="0.01 1" solimp="0.8 0.9 0.001" margin="0.001" user="0" rgba="0.5 0.6 0.7 .4" contype="1" conaffinity="0" condim="6" group="3" />-->
-                <geom friction="1 0.5 0.0001" solref="0.04 1.2" solimp="0.0 0.6 0.01 0.5 1" margin="0.001" user="0" rgba="0.5 0.6 0.7 .4" contype="1" conaffinity="0" condim="6" group="3" />
+                <geom friction="1 0.5 0.0001" solref="0.06 1.2" solimp="0.0 0.5 0.001 0.5 1" margin="0.001" user="0" rgba="0.5 0.6 0.7 .4" contype="1" conaffinity="0" condim="6" group="3" />
                 <position user="1002 40 2001 -0.0001 0.0001"/>
             </default>
         </default>
