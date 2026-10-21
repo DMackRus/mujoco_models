@@ -64,6 +64,7 @@
       </default>
       <default class="affine">
         <position kp="100" ctrlrange="-6.28 6.28" forcerange="-40 40"/>
+<!--        <position kp="100" ctrlrange="-6.28 6.28" forcerange="-100 100"/>-->
       </default>
     </default>
   </default>
@@ -353,18 +354,18 @@
     <position class="affine" joint="RH_KFE" name="RH_KFE"/>
   </actuator>
 <!--  <actuator>-->
-<!--    <motor joint="LF_HAA" name="LF_HAA" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="LF_HFE" name="LF_HFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="LF_KFE" name="LF_KFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="RF_HAA" name="RF_HAA" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="RF_HFE" name="RF_HFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="RF_KFE" name="RF_KFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="LH_HAA" name="LH_HAA" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="LH_HFE" name="LH_HFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="LH_KFE" name="LH_KFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="RH_HAA" name="RH_HAA" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="RH_HFE" name="RH_HFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
-<!--    <motor joint="RH_KFE" name="RH_KFE" gear="20" ctrlrange="-1 1" ctrllimited="true"/>-->
+<!--    <motor joint="LF_HAA" name="LF_HAA" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="LF_HFE" name="LF_HFE" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="LF_KFE" name="LF_KFE" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="RF_HAA" name="RF_HAA" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="RF_HFE" name="RF_HFE" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="RF_KFE" name="RF_KFE" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="LH_HAA" name="LH_HAA" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="LH_HFE" name="LH_HFE" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="LH_KFE" name="LH_KFE" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="RH_HAA" name="RH_HAA" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="RH_HFE" name="RH_HFE" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
+<!--    <motor joint="RH_KFE" name="RH_KFE" gear="40" ctrlrange="-10 10" ctrllimited="true"/>-->
 <!--  </actuator>-->
 
 </mujoco>
