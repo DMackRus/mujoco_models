@@ -11,10 +11,10 @@
     <default>
         <default class="obstacle_geom">
 <!--            <geom solref="0.02 1.0" solimp="0.7 0.95 0.01 0.5 2" friction="1 0.005 0.0001" condim="3" margin="0.001"/>-->
-            <geom solref="0.04 1.1" solimp="0.4 0.9 0.001 0.5 2" friction="0.2 0.005 0.0001" condim="3" margin="0.001"/>
+            <geom solref="0.02 1.1" solimp="0.0 0.7 0.001 0.5 2" friction="0.4 0.005 0.0001" condim="3" margin="0.001"/>
         </default>
         <default class="container_geom">
-            <geom solref="0.04 1.1" solimp="0.7 0.95 0.001 0.5 2" friction="1 0.005 0.0001" condim="3" margin="0.001"/>
+            <geom solref="0.04 1.0" solimp="0.7 0.95 0.001 0.5 2" friction="1 0.005 0.0001" condim="3" margin="0.001"/>
         </default>
     </default>
 
@@ -49,7 +49,7 @@
         <!-- Yellow object -->
         <body pos="1 -0.25 0.06" name="Napolina_pasta">
             <joint type="free" />
-            <geom type = "box" class="obstacle_geom" pos = "0 0 0" size = "0.0975  0.07 0.031" rgba = "0.1 0 0.1 1" mass="0.539" />
+            <geom type = "box" class="obstacle_geom" pos = "0 0 0" size = "0.0975  0.07 0.0315" rgba = "0.1 0 0.1 1" mass="0.539" />
         </body>
 
         <!-- Medium Gray cylinder-->
